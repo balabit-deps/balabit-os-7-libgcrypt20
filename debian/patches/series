@@ -5,3 +5,5 @@
 31_tests-Add-HAVE_MMAP-check-for-MinGW.patch
 disable_fips_enabled_read.patch
 CVE-2018-0495.patch
+CVE-2019-13627-1.patch
+CVE-2019-13627-2.patch

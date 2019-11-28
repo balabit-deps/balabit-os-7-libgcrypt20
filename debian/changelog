@@ -1,3 +1,15 @@
+libgcrypt20 (1.8.1-4ubuntu1.2) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: ECDSA timing attack
+    - debian/patches/CVE-2019-13627-1.patch: add mitigation against timing
+      attack in cipher/ecc-ecdsa.c, mpi/ec.c.
+    - debian/patches/CVE-2019-13627-2.patch: fix use of nonce, use larger
+      one in cipher/dsa-common.c, cipher/dsa.c, cipher/ecc-ecdsa.c,
+      cipher/ecc-gost.c, cipher/pubkey-internal.h.
+    - CVE-2019-13627
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 28 Nov 2019 13:53:53 -0500
+
 libgcrypt20 (1.8.1-4ubuntu1.1) bionic-security; urgency=medium
 
   * SECURITY UPDATE: memory-cache side-channel attack on ECDSA signatures
